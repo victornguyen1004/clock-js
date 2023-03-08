@@ -1,0 +1,135 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.4s linear; 
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f2fc;
+}
+
+section.dark {
+    background-color: rgb(32, 34, 39);
+}
+
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    max-width: 560px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    position: relative;
+}
+
+section.dark .container {
+    background-color:rgb(88, 91, 97);
+}
+
+section .container .icons i {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background: rgb(43, 43, 43);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section.dark .container .icons i {
+    background-color: #e6f2fc;
+    color: rgb(32, 34, 39);
+}
+
+.container .icons i.fa-sun {
+    opacity: 0%;
+    pointer-events: none;
+
+}
+
+section.dark .container .icons i.fa-sun {
+    opacity: 1;
+    pointer-events: auto;
+    font-size: 20px;
+}
+
+section .container .time {
+    display: flex;
+    align-items: center;
+}
+
+.container .time .time-colon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.time .time-colon .am_pm {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: -48px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section.dark .time .time-colon .am_pm {
+    color: #fff;
+}
+
+.time .time-colon .time-text{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e6f2fc;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+section.dark .time .time-colon .time-text {
+    background-color:rgb(32, 34, 39)
+}
+
+.time .time-colon .time-text,
+.time .time-colon .colon {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+section.dark .time .time-colon .time-text,
+section.dark .time .time-colon .colon {
+    color: #fff;
+}
+
+.time .time-colon .colon {
+    margin: 0 15px;
+    font-size: 44px;
+}
+
+.time-colon .time-text .text {
+    font-size: 16px;
+    letter-spacing: 2px;;
+}
